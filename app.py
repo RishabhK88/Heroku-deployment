@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Hello World'
+    return render_template( 'check.html' )
 
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
