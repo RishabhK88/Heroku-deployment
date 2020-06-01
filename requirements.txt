@@ -6,6 +6,6 @@ MarkupSafe==1.1.1
 numpy==1.16.5
 Werkzeug==0.16.0
 pandas==0.25.1
-tensorflow==1.15
+tensorflow==1.15.2
 tflearn
 nltk
