@@ -1,4 +1,5 @@
 from flask import Flask, render_template,request,jsonify
+from flask_cors import CORS, cross_origin
 import random 
 import numpy
 import nltk
@@ -14,6 +15,7 @@ import os
 
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def home():
@@ -33,6 +35,7 @@ def bag_of_words(s, words):
     return numpy.array(bag)
 
 @app.route( '/chat' ,methods=['GET', 'POST'])
+@cross_origin()
 def chat():
     #msg = request.get_json(force=True)
     content = request.json
