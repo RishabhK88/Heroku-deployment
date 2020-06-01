@@ -1,37 +1,129 @@
-import numpy as np
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, render_template,request,jsonify
+import random 
+import numpy
+import nltk
+from nltk.stem.lancaster import LancasterStemmer
+stemmer = LancasterStemmer()
+nltk.download('punkt')
+import tflearn
+import tensorflow
+import json
 import pickle
+import os
+
+
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return 'Hello World'
 
-@app.route('/predict',methods=['POST'])
-def predict():
-    '''
-    For rendering results on HTML GUI
-    '''
-    int_features = [int(x) for x in request.form.values()]
-    final_features = [np.array(int_features)]
-    prediction = model.predict(final_features)
+def bag_of_words(s, words):
+    bag = [0 for _ in range(len(words))]
 
-    output = round(prediction[0], 2)
+    s_words = nltk.word_tokenize(s)
+    s_words = [stemmer.stem(word.lower()) for word in s_words]
 
-    return render_template('index.html', prediction_text='probability of thi disease is $ {}'.format(output))
+    for se in s_words:
+        for i, w in enumerate(words):
+            if w == se:
+                bag[i] = 1
+            
+    return numpy.array(bag)
 
-@app.route('/predict_api',methods=['POST'])
-def predict_api():
-    '''
-    For direct API calls trought request
-    '''
-    data = request.get_json(force=True)
-    prediction = model.predict([np.array(list(data.values()))])
+@app.route( '/chat' ,methods=['GET', 'POST'])
+def chat():
+    #msg = request.get_json(force=True)
+    content = request.json
+    msg=content['text']
+    #msg=request.get_json(force=True)
+    
 
-    output = prediction[0]
-    return jsonify(output)
+    with open("intents.json") as file:
+        data = json.load(file)
 
-if __name__ == "__main__":
+    try:
+        with open("data.pickle", "rb") as f:
+            words, labels, training, output = pickle.load(f)
+    except:
+        words = []
+        labels = []
+        docs_x = []
+        docs_y = []
+    
+        for intent in data["intents"]:
+            for pattern in intent["patterns"]:
+                wrds = nltk.word_tokenize(pattern)
+                words.extend(wrds)
+                docs_x.append(wrds)
+                docs_y.append(intent["tag"])
+    
+            if intent["tag"] not in labels:
+                labels.append(intent["tag"])
+    
+        words = [stemmer.stem(w.lower()) for w in words if w != "?"]
+        words = sorted(list(set(words)))
+    
+        labels = sorted(labels)
+    
+        training = []
+        output = []
+    
+        out_empty = [0 for _ in range(len(labels))]
+    
+        for x, doc in enumerate(docs_x):
+            bag = []
+    
+            wrds = [stemmer.stem(w.lower()) for w in doc]
+    
+            for w in words:
+                if w in wrds:
+                    bag.append(1)
+                else:
+                    bag.append(0)
+    
+            output_row = out_empty[:]
+            output_row[labels.index(docs_y[x])] = 1
+    
+            training.append(bag)
+            output.append(output_row)
+    
+    
+        training = numpy.array(training)
+        output = numpy.array(output)
+        with open("data.pickle", "wb") as f:
+            pickle.dump((words, labels, training, output), f)
+
+    tensorflow.reset_default_graph()
+    
+    net = tflearn.input_data(shape=[None, len(training[0])])
+    net = tflearn.fully_connected(net, 8)
+    net = tflearn.fully_connected(net, 8)
+    net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
+    net = tflearn.regression(net)
+    
+    model = tflearn.DNN(net)
+    
+    MODEL_NAME='model.tflearn'
+    if os.path.exists(MODEL_NAME + ".meta"):
+        model.load(MODEL_NAME)
+    else:
+        model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
+        model.save(MODEL_NAME)
+        
+    results = model.predict([bag_of_words(msg, words)])
+    results_index = numpy.argmax(results)
+    tag = labels[results_index]
+
+    for tg in data["intents"]:
+            if tg['tag'] == tag:
+                responses = tg['responses']
+
+    return jsonify({'data' :random.choice(responses)})
+   # return jsonify(random.choice(responses))
+
+    
+
+if __name__ == '__main__':
     app.run(debug=True)
