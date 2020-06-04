@@ -14,8 +14,7 @@
   {
   "tag": "purpose",
   "patterns":["what do you do", "what is the purpose of dsc", "what is done by dsc"],
-  "responses":["Google collaborates with university students who are passionate about growing developer communities.
-Developer Student Club powered by Google Developers is an initiative to grow their knowledge on developer technologies and more through peer to peer workshops and events, and gain relevant industry experience."],
+  "responses":["Google collaborates with university students who are passionate about growing developer communities. Developer Student Club powered by Google Developers is an initiative to grow their knowledge on developer technologies and more through peer to peer workshops and events, and gain relevant industry experience."],
   "context_set": ""
   },
   {
@@ -147,9 +146,7 @@ Developer Student Club powered by Google Developers is an initiative to grow the
   {
     "tag": "team",
     "patterns":[ "Who are there in the team","Members of the Community","Who runs dsc tiet"],
-    "responses":["These are the amazing bunch of people who make the community what it is. Who are the Backbone of Developer Student Club, TIET and ensure that we can forge ahead #WhateverItTakes!
-They take the time out from their daily grind to give back to the members and empower them to become bigger (Metaphorically). And Better.
-(Meet the Team)"],
+    "responses":["These are the amazing bunch of people who make the community what it is. Who are the Backbone of Developer Student Club, TIET and ensure that we can forge ahead #WhateverItTakes! They take the time out from their daily grind to give back to the members and empower them to become bigger (Metaphorically). And Better "],
     "context_set": ""
   },
   {
