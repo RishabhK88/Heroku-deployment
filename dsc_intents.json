@@ -160,6 +160,6 @@
     "patterns":["bye", "ok,bye","that will be all","i will leave now","that's all","goodbye"],
     "responses":["See you soon","Will be grateful to assist you again","Nice talking to you"],
     "context_set": ""
-  },
+  }
 ]
 }
