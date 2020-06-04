@@ -43,7 +43,7 @@ def chat():
     #msg=request.get_json(force=True)
     
 
-    with open("intents.json") as file:
+    with open("dsc_intents.json") as file:
         data = json.load(file)
 
     try:
