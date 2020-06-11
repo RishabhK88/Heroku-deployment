@@ -38,38 +38,38 @@
   {
     "tag": "ss",
     "patterns":[ "Shubhank Saxena"],
-    "responses":["Shubhank Saxena: Lead of DSC <br> LinkedIn : <a href='https://www.linkedin.com/in/shubhank-saxena/'> https://www.linkedin.com/in/shubhank-saxena/ </a> <br> GitHub: <a href='https://github.com/shubhank-saxena'> https://github.com/shubhank-saxena  </a> "],
+    "responses":["Shubhank Saxena: Lead of DSC <br> LinkedIn : <a href='https://www.linkedin.com/in/shubhank-saxena/' style='color: #FFFFFF'> https://www.linkedin.com/in/shubhank-saxena/ </a> <br> GitHub: <a href='https://github.com/shubhank-saxena' style='color: #FFFFFF'> https://github.com/shubhank-saxena  </a> "],
     "context_set": ""
   },
   {
     "tag": "aa",
     "patterns":[ "Aman Arora"],
-    "responses":["Aman Arora: Co Lead of DSC  <br>  LinkedIn: <a href='https://www.linkedin.com/in/aman-arora9848/'> https://www.linkedin.com/in/aman-arora9848/ </a>  <br> GitHub: <a href='https://github.com/amanarora9848'> https://github.com/amanarora9848 </a> "],
+    "responses":["Aman Arora: Co Lead of DSC  <br>  LinkedIn: <a href='https://www.linkedin.com/in/aman-arora9848/' style='color: #FFFFFF'> https://www.linkedin.com/in/aman-arora9848/ </a>  <br> GitHub: <a href='https://github.com/amanarora9848' style='color: #FFFFFF'> https://github.com/amanarora9848 </a> "],
 
     "context_set": ""
   },
   {
     "tag": "js",
     "patterns":[ "Jaskeerat Singh"],
-    "responses":["Jaskeerat Singh: Developer in Web and App Team <br> LinkedIn : <a href='https://www.linkedin.com/in/jaskeerat789/'> https://www.linkedin.com/in/jaskeerat789/ </a>  <br> GitHub: <a href='https://github.com/jaskeerat789'> https://github.com/jaskeerat789 </a> "],
+    "responses":["Jaskeerat Singh: Developer in Web and App Team <br> LinkedIn : <a href='https://www.linkedin.com/in/jaskeerat789/' style='color: #FFFFFF'> https://www.linkedin.com/in/jaskeerat789/ </a>  <br> GitHub: <a href='https://github.com/jaskeerat789' style='color: #FFFFFF'> https://github.com/jaskeerat789 </a> "],
     "context_set": ""
   },
   {
     "tag": "ss1",
     "patterns":[ "Soumya Swaraj"],
-    "responses":["Soumya Swaraj: Developer in Web and App Team <br> LinkedIn : <a href='https://www.linkedin.com/in/isoumyaswaraj/'> https://www.linkedin.com/in/isoumyaswaraj/ </a> <br> GitHub : <a href='https://github.com/SoumyaSwaraj'> https://github.com/SoumyaSwaraj </a> "],
+    "responses":["Soumya Swaraj: Developer in Web and App Team <br> LinkedIn : <a href='https://www.linkedin.com/in/isoumyaswaraj/' style='color: #FFFFFF'> https://www.linkedin.com/in/isoumyaswaraj/ </a> <br> GitHub : <a href='https://github.com/SoumyaSwaraj' style='color: #FFFFFF'> https://github.com/SoumyaSwaraj </a> "],
     "context_set": ""
   },
   {
     "tag": "jp",
     "patterns":[ "Jay Parmani"],
-    "responses":["Jay Parmani: Developer in Web and App Team <br> LinkedIn : <a href='https://www.linkedin.com/in/jsparmani/'> https://www.linkedin.com/in/jsparmani/ </a>  <br> GitHub: <a href='https://github.com/jsparmani'> https://github.com/jsparmani </a> "],
+    "responses":["Jay Parmani: Developer in Web and App Team <br> LinkedIn : <a href='https://www.linkedin.com/in/jsparmani/' style='color: #FFFFFF'> https://www.linkedin.com/in/jsparmani/ </a>  <br> GitHub: <a href='https://github.com/jsparmani' style='color: #FFFFFF'> https://github.com/jsparmani </a> "],
     "context_set": ""
   },
   {
     "tag": "kd",
     "patterns":[ "Kush Daga"],
-    "responses":["Kush Daga: Developer in Web & App Team and Blockchain Team <br> LinkedIn : <a href='https://www.linkedin.com/in/kushdaga/'> https://www.linkedin.com/in/kushdaga/</a> <br> GitHub : <a href='https://github.com/kush-daga'> https://github.com/kush-daga </a>"],
+    "responses":["Kush Daga: Developer in Web & App Team and Blockchain Team <br> LinkedIn : <a href='https://www.linkedin.com/in/kushdaga/' style='color: #FFFFFF'> https://www.linkedin.com/in/kushdaga/</a> <br> GitHub : <a href='https://github.com/kush-daga' style='color: #FFFFFF'> https://github.com/kush-daga </a>"],
     "context_set": ""
   },
   {
@@ -81,43 +81,43 @@
   {
     "tag": "sa",
     "patterns":[ "Shreshth Arora"],
-    "responses":["Shreshth Arora: Developer in Web and App Team <br> LinkedIn : <a href='https://www.linkedin.com/in/shreshtharora/'> https://www.linkedin.com/in/shreshtharora/ </a>  <br> GitHub : <a href='https://github.com/AroraShreshth'> https://github.com/AroraShreshth </a>"],
+    "responses":["Shreshth Arora: Developer in Web and App Team <br> LinkedIn : <a href='https://www.linkedin.com/in/shreshtharora/' style='color: #FFFFFF'> https://www.linkedin.com/in/shreshtharora/ </a>  <br> GitHub : <a href='https://github.com/AroraShreshth' style='color: #FFFFFF'> https://github.com/AroraShreshth </a>"],
     "context_set": ""
   },
   {
     "tag": "ag",
     "patterns":[ "Abhimat Gupta"],
-    "responses":["Abhimat Gupta: Machine Learning and developer in IOT Team <br> (LinkedIn : <a href='https://www.linkedin.com/in/abhimat-gupta-b8a19a181/'> https://www.linkedin.com/in/abhimat-gupta-b8a19a181/ </a> <br> GitHub : <a href='https://github.com/abhi0444'> https://github.com/abhi0444 </a> "],
+    "responses":["Abhimat Gupta: Machine Learning and developer in IOT Team <br> (LinkedIn : <a href='https://www.linkedin.com/in/abhimat-gupta-b8a19a181/' style='color: #FFFFFF'> https://www.linkedin.com/in/abhimat-gupta-b8a19a181/ </a> <br> GitHub : <a href='https://github.com/abhi0444' style='color: #FFFFFF'> https://github.com/abhi0444 </a> "],
     "context_set": ""
   },
   {
     "tag": "hpg",
     "patterns":[ "Harsh Pallav Gov"],
-    "responses":["Harsh Pallav Gov: Developer in IOT Team <br> LinkedIn : <a href='https://www.linkedin.com/in/harshpallavgovindrao/'> https://www.linkedin.com/in/harshpallavgovindrao/ </a> <br> GitHub : <a href='https://github.com/IamHarshPallav'> https://github.com/IamHarshPallav </a> "],
+    "responses":["Harsh Pallav Gov: Developer in IOT Team <br> LinkedIn : <a href='https://www.linkedin.com/in/harshpallavgovindrao/' style='color: #FFFFFF'> https://www.linkedin.com/in/harshpallavgovindrao/ </a> <br> GitHub : <a href='https://github.com/IamHarshPallav' style='color: #FFFFFF'> https://github.com/IamHarshPallav </a> "],
     "context_set": ""
   },
   {
     "tag": "s",
     "patterns":[ "Sabhya"],
-    "responses":["Sabhya: Developer in Software Team <br> LinkedIn : < href='https://www.linkedin.com/in/sabhyagrover/'> https://www.linkedin.com/in/sabhyagrover/ </a> <br> GitHub : <a href='https://github.com/SabhyaGrover'> https://github.com/SabhyaGrover </a> "],
+    "responses":["Sabhya: Developer in Software Team <br> LinkedIn : < href='https://www.linkedin.com/in/sabhyagrover/' style='color: #FFFFFF'> https://www.linkedin.com/in/sabhyagrover/ </a> <br> GitHub : <a href='https://github.com/SabhyaGrover' style='color: #FFFFFF'> https://github.com/SabhyaGrover </a> "],
     "context_set": ""
   },
   {
     "tag": "ms",
     "patterns":[ "Mankaran Singh"],
-    "responses":["Mankaran Singh: Member of Machine Learning Team <br> LinkedIn : <a href='https://www.linkedin.com/in/mankaran32/'> https://www.linkedin.com/in/mankaran32/ </a> <br> GitHub : <a href='https://github.com/MankaranSingh'> https://github.com/MankaranSingh </a> "],
+    "responses":["Mankaran Singh: Member of Machine Learning Team <br> LinkedIn : <a href='https://www.linkedin.com/in/mankaran32/' style='color: #FFFFFF'> https://www.linkedin.com/in/mankaran32/ </a> <br> GitHub : <a href='https://github.com/MankaranSingh' style='color: #FFFFFF'> https://github.com/MankaranSingh </a> "],
     "context_set": ""
   },
   {
     "tag": "cg",
     "patterns":[ "Chirag Goel"],
-    "responses":["Chirag Goel: Member of Machine Learning Team <br> LinkedIn : <a href='https://www.linkedin.com/in/chirag-goel-5b97aa169/'> https://www.linkedin.com/in/chirag-goel-5b97aa169/ </a> <br> GitHub : <a href='https://github.com/chiragoel'> https://github.com/chiragoel </a> "],
+    "responses":["Chirag Goel: Member of Machine Learning Team <br> LinkedIn : <a href='https://www.linkedin.com/in/chirag-goel-5b97aa169/' style='color: #FFFFFF'> https://www.linkedin.com/in/chirag-goel-5b97aa169/ </a> <br> GitHub : <a href='https://github.com/chiragoel' style='color: #FFFFFF'> https://github.com/chiragoel </a> "],
     "context_set": ""
   },
   {
     "tag": "pm",
     "patterns":[ "Paras Madan"],
-    "responses":["Paras Madan: Member of Machine Learning Team <br> LinkedIn : <a href='https://www.linkedin.com/in/paras-madan-a9863716b/'> https://www.linkedin.com/in/paras-madan-a9863716b/ </a> <br> GitHub : <a href='https://github.com/paras55'> https://github.com/paras55 </a> "],
+    "responses":["Paras Madan: Member of Machine Learning Team <br> LinkedIn : <a href='https://www.linkedin.com/in/paras-madan-a9863716b/' style='color: #FFFFFF'> https://www.linkedin.com/in/paras-madan-a9863716b/ </a> <br> GitHub : <a href='https://github.com/paras55' style='color: #FFFFFF'> https://github.com/paras55 </a> "],
     "context_set": ""
   },
   {
