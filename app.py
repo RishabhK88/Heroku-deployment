@@ -65,7 +65,7 @@ def chat():
     
     for i in range(n):
         if words[i] in names:
-          with open("intents0.json") as file:
+          with open("names.json") as file:
              datas = json.load(file)
           new=datas[words[i]]
           print(new)
