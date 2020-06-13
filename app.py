@@ -1,6 +1,6 @@
 from flask import Flask, render_template,request,jsonify
 #from flask_socketio import SocketIO, emit,send,request,jsonify
-from flask_ngrok import run_with_ngrok
+#from flask_ngrok import run_with_ngrok
 from flask_cors import CORS, cross_origin
 import random 
 from nltk.tokenize import word_tokenize
@@ -24,7 +24,7 @@ import os
 
 
 app = Flask(__name__)
-run_with_ngrok(app)
+#run_with_ngrok(app)
 CORS(app)
 '''app.config['CORS_HEADERS'] = 'Content-Type'
 cors = CORS(app, resources={
