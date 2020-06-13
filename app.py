@@ -33,6 +33,11 @@ cors = CORS(app, resources={
        
     }
 })'''
+
+@app.route('/')
+def home():
+    return render_template( 'check.html' )
+
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
 
